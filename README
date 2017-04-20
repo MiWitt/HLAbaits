@@ -1,10 +1,15 @@
 The program baitdesign generates an target sequence tiling (tiling size 1) to design probes for targeted enrichment.
 
-run like: baitdesign probe_length mis_matches ref_seq_fasta scratch existing_probes_fasta
+run like: baitdesign probe_length mis_matches tiling_step ref_seq_fasta scratch [existing_probes_fasta]
 
 Parameters
- probe_length: length of baits
- mis_matches: number of possible mismatches between reference and bait
- ref_seq_fasta: multiple fasta file with all reference sequences
- scratch: a directory with read/write access
- existing_probes_fasta: a multiple fasta file with all existing bait sequences
+probe_length: define the length of the probes here probes (recommended 120)
+mis_matches: for each new fasta sequence all existing probes are aligned to it using blat. Define the number of allowed mismatches here (recommended 5)
+tiling_step: for nun overlapping probes set tiling step = probe_length. Set it to probe_length/2 for half overlapping (recommended 60)
+ref_seq_fasta: Provide your collection of fasta sequences here. Set the path to a multiple fasta file
+scratch: Set the path to a scratch directory where " << basename(argv[0]) << " has read write access
+existing_probes_fasta]: Provide a file of already existing probes here. Be aware of the important note below
+
+All output goes to stdout, so redirect the output to your destination file. (e.g. > /foo/bar/my_baits.fa)
+
+IMPORTANT: if you provide an existing probes (baits) file, provide it in following format. First line unique probe name, second line probe sequence, third line unique probe name, etc. NO BLANK LINES, NO REDUNDANT PROBE NAMES.
