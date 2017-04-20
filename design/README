@@ -1,0 +1,6 @@
+probes_IKMB_custom_v0.1.fasta: 
+fasta file for MHC enrichment including many additional bait sequences for HLA allele variations. This file can be used to order RNA baits for targeted enrichment.
+
+
+probes_T7_IKMB_custom_v0.1.fasta: 
+fasta file for MHC enrichment including many additional bait sequences for HLA allele variations. this file can be used to order a DNA oligo library that can be used to produce your own RNA baits. Attached primers allow for amplification of the oligo pool and the presence of the T7 promot allows for RNA bait synthesis.
