@@ -1,0 +1,10 @@
+The program baitdesign generates an target sequence tiling (tiling size 1) to design probes for targeted enrichment.
+
+run like: baitdesign probe_length mis_matches ref_seq_fasta scratch existing_probes_fasta
+
+Parameters
+ probe_length: length of baits
+ mis_matches: number of possible mismatches between reference and bait
+ ref_seq_fasta: multiple fasta file with all reference sequences
+ scratch: a directory with read/write access
+ existing_probes_fasta: a multiple fasta file with all existing bait sequences
