@@ -1,4 +1,4 @@
-The program baitdesign generates an target sequence tiling (tiling size 1) to design probes for targeted enrichment.
+The program baitdesign generates an target sequence tiling to design probes for targeted enrichment. If you want to have an existing design for HLA enrichment look into the design folder.
 
 run like: baitdesign probe_length mis_matches tiling_step ref_seq_fasta scratch [existing_probes_fasta]
 
