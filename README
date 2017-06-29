@@ -13,3 +13,5 @@ existing_probes_fasta]: Provide a file of already existing probes here. Be aware
 All output goes to stdout, so redirect the output to your destination file. (e.g. > /foo/bar/my_baits.fa)
 
 IMPORTANT: if you provide an existing probes (baits) file, provide it in following format. First line unique probe name, second line probe sequence, third line unique probe name, etc. NO BLANK LINES, NO REDUNDANT PROBE NAMES.
+
+IMPORTANT: This software depends on a preinstalled blat (https://genome.ucsc.edu/goldenPath/help/blatSpec.html) that must be executable by simply typing 'blat' in a terminal!
