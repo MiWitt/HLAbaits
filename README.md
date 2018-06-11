@@ -1,12 +1,6 @@
 
-# The program baitdesign generates a target sequence tiling to design probes for targeted enrichment. 
+# The program HLAbaits generates a target sequence tiling to design probes for targeted enrichment. 
 If you want to have an existing design for HLA enrichment look into the design folder.
-
-# Please note
-
-This software reads long reads in fastq format (e.g. PacBio) and performs *in silico* random fragmentation. The reads will be random fragmented to the size chosen by parameter (-l/--length). All fragments originating from the same long read will be tagged as paired/linked in the fastq header. Random fragmentation starts at a random nucleotide at the 5' end of the read. The random start nucleotide can be any between 0 and (-l/--length).
-
-This software uses [TCLAP](https://github.com/eile/tclap) for argument parsing which comes with its own licence. 
 
 
 ## Installing the tool
