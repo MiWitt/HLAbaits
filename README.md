@@ -23,14 +23,21 @@ To update the code, run git update inside of the local clone:
 
 ## Usage
 run like: 
+
     HLAbaits probe_length mis_matches tiling_step ref_seq_fasta scratch [existing_probes_fasta]
 
 Parameters
+
     probe_length:  define the length of the probes here (recommended 120)
+    
     mis_matches:   for each new fasta sequence all existing probes are aligned to it using blat. Define the number of allowed mismatches here (recommended 5)
+    
     tiling_step:   for nun overlapping probes set tiling step = probe_length. Set it to probe_length/2 for half overlapping (recommended 60)
+    
     ref_seq_fasta: Provide your collection of fasta sequences here. Set the path to a multiple fasta file
+    
     scratch:       Set the path to a scratch directory where HLAbaits has read write access
+    
     existing_probes_fasta]: Provide a file of already existing probes here. Be aware of the important note below
 
 
