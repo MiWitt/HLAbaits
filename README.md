@@ -1,5 +1,5 @@
 
-# The program baitdesign generates an target sequence tiling to design probes for targeted enrichment. 
+# The program baitdesign generates a target sequence tiling to design probes for targeted enrichment. 
 If you want to have an existing design for HLA enrichment look into the design folder.
 
 # Please note
